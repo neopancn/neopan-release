@@ -61,12 +61,15 @@
 | 链接转换 | 别人的分享链接一键转成自己的，支持 Excel 导入导出 | 核心 |
 | 广告清理 | 智能清理广告文件与垃圾文件夹，支持关键词与大小筛选 | 核心 |
 | 自动同步 | 定时同步分享链接最新文件，增量同步，支持多周期 | 高级 |
-| 网盘搬家 | 百度 ↔ 夸克 ↔ 迅雷跨盘互转，边下边传、传完即删 | 跨盘 |
+| 网盘搬家 | 百度 ↔ 夸克 ↔ 迅雷 ↔ UC 跨盘互转，边下边传、传完即删 | 跨盘 |
 | 随机插入文件 | 随机插入广告钩子或联系方式文件，提升曝光转化 | 营销 |
-| AI 素材生成 | Gemini + DeepSeek 生成推广图片与文案 | AI |
+| **后处理** | 转存/同步/链接转换完成后自动执行：重命名 → 清广告 → 插广告 全流水线 | 自动化 |
+| AI 素材生成 | Gemini + DeepSeek 生成推广图片与文案（免费功能） | AI |
+| 贴吧自动发帖 | 多吧按序自动发帖、支持图片上传（AI 自动推广渠道之一） | 自动化 |
 | WordPress 自动发布 | AI 素材一键发布到 WordPress 网站，引流自动化 | 自动化 |
-| 目录树导出 | 网盘目录结构一键导出 | 工具 |
-| 磁盘检测 | 网盘空间与文件健康检测 | 工具 |
+| 文件浏览器 | 四盘通用面板：浏览 / 多账号搜索 / 下载 / 分享 / 删除 | 辅助 |
+| 目录树导出 | 网盘目录结构一键导出为树形文本 | 工具 |
+| 在线工具集 | 网盘链接有效性检测（10+ 网盘）+ 正则表达式生成器，免登录 | 免费 |
 
 ## 功能详解
 
@@ -81,7 +84,11 @@
 | [广告清理教程](https://app.neopan.cn/docs/ad-cleaner-tutorial) | 广告文件识别、关键词与大小筛选、批量删除 |
 | [批量重命名](https://app.neopan.cn/docs/batch-rename) | 多规则组合批量改名 |
 | [AI 自动推广教程](https://app.neopan.cn/docs/ai-auto-promotion-tutorial) | AI 素材生成 + WordPress 自动发布 |
-| [多网盘管理](https://app.neopan.cn/docs/multi-cloud-management) | 多网盘账号统一添加与切换 |
+| [后处理教程](https://app.neopan.cn/docs/post-processing-guide) | 转存后自动重命名 → 清广告 → 插广告 流水线 |
+| [批量分享教程](https://app.neopan.cn/docs/batch-share-tutorial) | 批量生成分享链接和提取码，统一有效期 |
+| [文件浏览器](https://app.neopan.cn/docs/file-browser-guide) | 四盘通用文件面板：搜索 / 下载 / 分享 / 删除 |
+| [导出目录树](https://app.neopan.cn/docs/export-directory-tree-guide) | 目录结构一键导出树形文本 |
+| [多网盘管理](https://app.neopan.cn/docs/multi-cloud-management) | 四网盘多账号统一添加与切换 |
 | [下载安装快速上手](https://app.neopan.cn/docs/download-install-quickstart) | 从下载到第一个批量任务 |
 
 完整文档目录见 [app.neopan.cn/docs](https://app.neopan.cn/docs)。
@@ -105,7 +112,9 @@ NeoPan 覆盖这些高频网盘操作需求：
 - **网盘链接转换**：把别人的夸克 / 百度 / 迅雷分享链接转成自己的，支持批量与 Excel
 - **网盘广告文件清理**：批量删除广告文件与垃圾文件夹
 - **网盘批量重命名**：多规则组合批量改名
-- **网盘拉新推广**：[AI 自动生成推广素材](https://app.neopan.cn/docs/ai-auto-promotion-tutorial) + WordPress 自动发布
+- **网盘拉新推广**：[AI 自动生成推广素材](https://app.neopan.cn/docs/ai-auto-promotion-tutorial) + 贴吧自动发帖 + WordPress 自动发布
+- **网盘分享链接失效检测**：[免费在线链接检测工具](https://app.neopan.cn/tools/disk-check)，10+ 网盘批量粘贴免登录
+- **转存后自动整理**：[后处理](https://app.neopan.cn/docs/post-processing-guide)一次配置，重命名 / 清广告 / 插广告全自动
 - **网盘资源批量下载 / 网盘互转方法对比**：见[官方博客](https://app.neopan.cn/blog)实战文章
 
 ## 常见问题
@@ -114,13 +123,28 @@ NeoPan 覆盖这些高频网盘操作需求：
 夸克网盘、百度网盘、迅雷云盘、UC 网盘，一个工具统一管理。
 
 **NeoPan 是免费的吗？**
-免费下载使用，会员价格见[官网定价页](https://app.neopan.cn/pricing)。
+基础功能**免费**（批量转存 / 重命名 / 分享 / 广告清理 / 插入 / AI 素材生成）。进阶功能需会员：VIP1 ¥25/月，VIP2 ¥30/月（自动同步高级 + AI 全家桶），永久版 ¥360 买断，详见[定价页](https://app.neopan.cn/pricing)。
+
+**NeoPan 自己有推广返佣吗？**
+有。[推广返佣计划](https://app.neopan.cn/blog/neopan-referral-commission-program)最高 **50%** 佣金（普通会员 40% / 专业版 50%），被推广用户后续续购持续返佣，佣金满 10 元即可提现，2-3 小时内到账。
 
 **NeoPan 安全吗？**
 Cookie 与账号信息强加密本地存储，所有操作在本机执行，数据不上传服务器。
 
 **与手动操作比快多少？**
 上百条分享链接的批量转存，手动要几小时，NeoPan 一次批量完成（实测 128 条链接 47 秒）。
+
+## 🔄 版本里程碑
+
+- **v3.4.7** —— 批量分享支持按层级递归分享，迅雷广告插入恢复
+- **v3.4.6** —— **跨盘能力重新上线**：网盘搬家 / 跨网盘转存 / 跨网盘链接转换三模块
+- **v3.4.5** —— **新增 UC 网盘支持**，链接转换去重缓存
+- **v3.1.7** —— **应用内在线更新**，DeepSeek v4 flash 支持
+- **v3.1.6** —— **新增迅雷云盘支持**，百度批量下载与上传
+- **v3.1.0** —— **多网盘账号体系**，百度网盘自动同步上线
+- **v2.5.5** —— **基础功能免费开放**，AI 素材一键发布 WordPress
+
+完整更新日志见[文档中心](https://app.neopan.cn/docs)。
 
 ## 相关链接
 
